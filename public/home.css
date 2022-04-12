@@ -1,0 +1,17 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container-fluid{
+    padding: 0% 0%;
+}
+.carousel-inner{
+    height: 500px;
+}
+.navbar{
+    color: aqua;
+}
+.container-fluid{
+    align-items: center;
+    color: aquamarine;
+}

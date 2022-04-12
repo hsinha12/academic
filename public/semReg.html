@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATIONAL INSTITUTE OF TECHNOLOGY JAMSHEDPUR</title>
+    <link rel="stylesheet" href="semreg.css">
+</head>
+
+<body>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="100%" valign="top">
+                                    <table width="100%" cellspacing="0" class="login_head_bg">
+                                        <tbody>
+                                            <tr>
+                                                <td width="78px" valign="top">
+                                                    <img id="nitlogo" src="NIT.png" style="height:64px;width:64px;">
+                                                </td>
+                                                <td colspan="2">
+                                                    <table width="100%" cellspacing="0" class="login_head_bg">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width: 80%; text-align: center; font-size: 16pt; font-family: Verdana;
+                                                    font-weight: bold;">
+                                                                    <span id="spnHead">NATIONAL INSTITUTE OF TECHNOLOGY
+                                                                        JAMSHEDPUR</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 80%; text-align: center; font-size: 12pt; font-family: Verdana;
+                                                    font-weight: lighter">
+                                                                    <span id="SpnAddress">P.O.- NIT, Jamshedpur- 831014,
+                                                                        Jharkhand, India
+                                                                        Phone No. : +91-657- 2374248,2373407</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="10%" valign="top">
+                                                    <div id="divGoogleTrans">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="border-bottom: thick solid #8A4B08;">
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div class="container">
+
+        <div class="main">
+
+            <h2>APPLICATION FOR SEMESTER REGISTRATION</h2>
+
+            <form action="/register" name="myForm" onsubmit="return validateForm()" method="post">
+                <div class="formdesign" id="deptname">
+                    Department Name:<input type="text" placeholder="Department" name="deptname" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="yrofadmsn">
+                    year of Admission:<input type="text" placeholder="2021" name="yrofadmsn" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="programme">
+                    Programme:<input type="text" placeholder="" name="programme" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="sem">
+                    Semester:<input type="text" placeholder="1/2/3..." name="sem" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="regno">
+                    Registration Number:<input type="text" placeholder="2020PGCACAxx" name="regno" required>
+                    <span class="formerror"></span>
+                </div>
+
+                <h2>Personal Details:</h2>
+
+                <div class="formdesign" id="name">
+                    First Name:<input type="text" placeholder="First Name" name="fname" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="lname">
+                    Last Name:<input type="text" placeholder="Last Name" name="lname" required>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="formdesign" id="email">
+                    EmailID:<input type="email" placeholder="emailID" name="email" required>
+                    <span class="formerror"></span>
+                </div>
+                <div class="formdesign" id="phone">
+                    Contact No.:<input type="text" placeholder="706516xxxx" name="phone" required>
+                    <span class="formerror"></span>
+                </div>
+
+
+                <div class="" id="category">
+                    <label id="category">Category:</label>
+                    <input type="radio" name="category" value="Gen" id="category"><span>Gen</span>
+                    <input type="radio" name="category" value="Obc" id="category"><span>Obc</span>
+                    <input type="radio" name="category" value="st" id="category"><span>St</span>
+                    <input type="radio" name="category" value="sc" id="category"><span>Sc</span>
+                    <input type="radio" name="category" value="other" id="category"><span>Other</span>
+                </div>
+
+                <h2>Online Payment Details:</h2>
+
+                <div class="formdesign" id="amount">
+                    Amount:<input type="number" placeholder="" name="amount" required>
+
+                </div>
+                <div class="formdesign" id="tno">
+                    Transaction ID No.:<input type="text" placeholder="" name="tno" required>
+
+                </div>
+                <div class="formdesign" id="tdate">
+                    Transaction Date:<input type="date" placeholder="" name="tdate" required>
+
+                </div>
+                <div class="formdesign" id="slip">
+                    Transaction slip:<input type="file" placeholder="" name="fslip" required>
+
+                </div>
+
+                <p>
+                    <input type="checkbox" name="declaration" value="Gen" id="declaration">
+                    I hereby declare that all the above details furnished are correct to the best of my knowledge
+                    and belief. I also undertake that I will maintain 75% attendance in each head of passing otherwise
+                    will not be eligible to appear for university examination and also will be liable for action taken
+                    by
+                    college.
+                </p>
+
+                <div class="button">
+                    <input class="btn" type="submit" value="Submit">
+                    <input class="btn" type="reset">
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    function clearErrors() {
+        errors = document.getElementsByClassName('formerror');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+    }
+    function seterror(id, error) {
+        //set error inside tag of id
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+
+    }
+    function validateForm() {
+        var returnval = true;
+        clearErrors();
+        //preform validation and if validation fails , set the value of returnvalu to false 
+        var name = document.forms['myForm']["fname"].value;
+        if (name.length < 3) {
+            seterror("name", "*length of name is too short");
+            returnval = false;
+        }
+        // console.log(name);
+        var phone = document.forms['myForm']["phone"].value;
+        if (phone.length != 10) {
+            seterror("phone", "*phone number should be 10 digit");
+            returnval = false;
+        }
+        return returnval;
+
+    }
+</script>
+
+</html>

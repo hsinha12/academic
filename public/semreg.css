@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+    
+}
+table{
+    background-color: rgb(192, 175, 101);
+}
+.container{
+    background-image:url("nitbackground.jpg") ;
+}
+.main{
+    padding: 15px 30px;
+    margin: 0px 15%;
+    align-items: center;
+    background: linear-gradient(to bottom, #d4ec66 0%, #6375af 100%);
+    position:static;
+    height:auto ;
+    
+    border: 1px solid blue;
+   
+}
+.formdesign{
+    font-size: 20px;
+}
+h2{
+    padding: 10px;
+    text-align: center;
+    color: rgb(24, 24, 8);
+    font-family: "Times New Roman", Times, serif;
+}
+.formdesign input{
+    width: 40%;
+    padding: 8px 20px;
+    border: 1px solid blue;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.formerror{
+    color: red;
+}
+.button{
+    text-align: center;
+    align-content: flex-end;
+    align-items: center;
+}
+.btn{
+    border-radius: 16px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px 10px;
+   
+}
+.btn:hover{
+    background-color: blue;
+}

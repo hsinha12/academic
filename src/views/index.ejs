@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Year</th>
+            <th scope="col">Semester</th>
+            <th scope="col">Roll</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">contact</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% infoList.forEach(docs => { %>
+            <tr>
+                <th scope="row"><%= docs._id %></th>
+                <td><%= docs.deptname %></td>
+                <td><%= docs.yrofadmsn %></td>
+                <td><%= docs.sem %></td>
+                <td><%= docs.regno %></td>
+                <td><%= docs.fname %></td>
+                <td><%= docs.lname %></td>
+                <td><%= docs.phone %></td>
+            </tr>
+        <%})%>
+        </tbody>
+      </table>
+</body>
+</html>

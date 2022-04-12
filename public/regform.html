@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Form Validation using a sample registration form</title>
+  <link rel="stylesheet" href="regform.css">
+</head>
+
+<body onload="document.registration.userid.focus();">
+  <h1 class="reg">Registration Form</h1>
+  <div class="main">
+    <form name='registration' action="/studentreg" method="POST">
+      <ul>
+        <div class="nme">
+          <li>
+            <legend>Name:
+          </li>
+          </legend>
+          <label>
+            Firstname:
+            <input type="text" name="firstname" size="30" required>
+          </label>
+          <label>
+            Middlename:
+            <input type="text" name="middlename" size="20">
+          </label>
+          <label>
+            LastName:
+            <input type="text" name="lastname" size="30" required>
+          </label>
+        </div>
+        <li><label>Father's Name:
+            <input type="text" name="fathername" size="30" required >
+        </li>
+        <div class="user">
+          <li><label> Qualified entrance name:
+              <input type="text" name="entranceName" size="20" placeholder="NIMCET" required>
+            </label>
+            <label>
+              Rank:
+              <input type="int" name="rank" size="20" required>
+          </li>
+          </label>
+        </div>
+        </label>
+        <div class="birth">
+          <li> <label> date of birth :
+              <input type="date" name="dateofbirth" size="30" required />
+          </li>
+          </label>
+        </div>
+        <div class="address">
+          <li><label>Address:
+              <input type="text" name="address" size="50" />
+              <label>
+                Country:
+                <select name="country">
+                  <option selected="" value="Default">(Please select a country)</option>
+                  <option value="INDIA">India</option>
+                  <option value="CANADA">Canada</option>
+                  <option value="AUSTRALIA">Australia</option>
+                  <option value="RUSSIA">Russia</option>
+                  <option value="USA">USA</option>
+                </select>
+          </li>
+          </label>
+        </div>
+        <div class=" mail">
+          <li> <label> Email:
+              <input type="text" name="email" placeholder="name@domain.com" size="50" required />
+            </label>
+            <label> mobile number:
+              <input type="tel" name="mobilenumber" size="30" required />
+          </li>
+          </label>
+        </div>
+        <li><label>Gender:
+            <select name="Gender">
+              <option selected="" value="Default">Please select a Gender</option>
+              <option value="Male" name="mgender"><span>Male</span> </option>
+              <option value="Female" name="fgender"><span>Female</span></option>
+            </select>
+        </li>
+        </label>
+        <div class="program">
+          <li><label>Degree program:
+              <select name="program">
+                <option selected="" value="Default"> (Please select degree program )</option>
+                <option value="Bachelor of Technology"> Bachelor of Technology (B.tech)</option>
+                <option value="Master of Technology"> Master of Technology(M.tech) </option>
+                <option selected="Master of Computer Application"> Master of Computer Application (Mca) </option>
+                <option slected="Phd">Phd</option>
+          </li>
+          </label>
+          </select>
+        </div>
+        <li><label>Language:
+            <input type="checkbox" name="language" value="en" checked /><span>English</span>
+            <input type="checkbox" name="langusge" value="noen" /><span>Non English</span>
+        </li>
+        </label>
+
+
+        <div class="action">
+          <input class="btn" type="submit" name="submit" value="submit">
+          <label>
+            <input type="checkbox" name="remember"> Stay signed in
+          </label>
+        </div>
+
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-image: url("regform_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    font-family: san-serif;
+    margin-top: 40px;
+  }
+
+  .reg {
+    width: 500px;
+    background-color: rgb(204, 122, 122);
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px, 0px, 20px, 20px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .main {
+    background-color: rgb(152, 251, 229);
+    width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  form {
+    padding: 20px;
+    margin-left: 10px;
+  }
+
+  .id {
+    height: 15px;
+  }
+
+  .nme {
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+  }
+
+  .address {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .mail {
+    margin-bottom: 10px;
+  }
+
+  .program {
+    margin: 10px 0 10px 0;
+  }
+
+  .birth {
+    margin: 5px 0 0 0;
+  }
+
+  .action {
+
+    border-top: 1px solid #c6c7cc;
+    padding: 20px;
+  }
+
+  .action .btn {
+    background: linear-gradient(#49708f, #293f50);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    float: left;
+    padding: 8px 16px;
+  }
+
+  .action label {
+    color: rgb(18, 47, 190);
+    font-size: 12px;
+    float: left;
+    margin: 10px 0 0 20px;
+  }
